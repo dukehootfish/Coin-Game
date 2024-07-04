@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .div {
+            margin: auto;
+            width: 1000px;
+            height: 1000px;
+        }
+
+        label {
+            color: white;
+        }
+
+        .q {
+            color: white;
+            background-color: black;
+            border: 1px solid white;
+            width: 40px;
+        }
+    </style>
+    <label>
+        choose a number between 1 and 100 for q1 and q2
+    </label>
+    <br />
+    <input class="q" type="number" id="q1" placeholder="q1" />
+    <br />
+    <input class="q" type="number" id="q2" placeholder="q2" />
+    <br />
+
+    <label> how many times to run the game for each p</label>
+    <input class="q" type="number" id="r" placeholder="" />
+    <br />
+
+    <input type="button" value="submit" onClick="coinGame()" />
+
+    <div id="div">
+        <canvas id="cvs" style="border:1px solid white" height="1010" width="1515"></canvas>
+
+    </div>
+    <script type="text/javascript" src="Coin Game.js"></script>
+</body>
+</html>
