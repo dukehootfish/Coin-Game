@@ -28,12 +28,12 @@ function coinGame() {
     var p = 0;
     var r = document.getElementById("r").value;
     var q1 = document.getElementById("q1").value;
-    if (q1 > 100 || q1 < 1) {
+    if (q1 > 100 || q1 < 0) {
         alert("q1 must be between 1 than 100");
         return;
     }
     var q2 = document.getElementById("q2").value;
-    if (q2 > 100 || q2 < 1) {
+    if (q2 > 100 || q2 < 0) {
         alert("q2 must be between 1 than 100");
         return;
     }
