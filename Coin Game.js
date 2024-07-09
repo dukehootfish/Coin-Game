@@ -43,13 +43,13 @@ function coinGame() {
         p = i;
         for (var j = 0; j < r; j++) {
             heads = true;
-            if ((Math.random() * 100) + 1 <= q1) {
+            if (Math.floor((Math.random() * 100)) + 1 <= q1) {
                 heads = !heads;
             }
-            if ((Math.random() * 100) + 1 <= p) {
+            if (Math.floor((Math.random() * 100)) + 1 <= p) {
                 heads = !heads;
             }
-            if ((Math.random() * 100) + 1 <= q2) {
+            if (Math.floor((Math.random() * 100)) + 1 <= q2) {
                 heads = !heads;
             }
             if (!heads) {
